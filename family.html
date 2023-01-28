@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farhan's Family</title>
+  <link rel="icon" type="image/x-icon" href="images/frlogo.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/9e9e882896.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+  
+<body class="light-theme">
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="index.html">
+          <img src="images/frlogo.ico" alt="Fr logo" width="90" class="logo-light">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="biodata.html" class="nav-link">About Me</a>
+            </li>
+
+            <li>
+              <a href="education.html" class="nav-link">Education</a>
+            </li>
+
+            <li>
+              <a href="experience.html" class="nav-link">Experience</a>
+            </li>
+
+            <li>
+              <a href="family.html" class="nav-link">Family</a>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+ 
+          </ul>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="left" style="margin-top: 10px;">
+
+            <div class="pattern-bg"></div>
+            <div class="img-box">
+              <img src="images/frlogo.ico" alt="FR" width="150" class="hero-img">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+            </div>
+  
+          </div>
+  
+          <div class="wrapper" style="margin-left: 24px;">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="biodata.html" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact Me</a>
+              </li>
+
+             <li class="nav-item">
+                <a href="education.html" class="nav-link">Education</a>
+              </li>
+
+             <li class="nav-item">
+                <a href="experience.html" class="nav-link">Experience</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="family.html" class="nav-link">Family</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="gallery.html" class="nav-link">Gallery</a>
+              </li>
+ 
+            </ul>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!---FAMILY--->
+ 
+ <div class="main">
+	<h1>My Family</h1>
+  <style>
+    h1, p {color:white;}
+    h1 {margin-top: -50px;}
+
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: hsl(218, 23%, 23%);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+  </style>  
+   
+<div class="slideshow-container" style="border: 10px solid hsl(218, 23%, 23%);">
+
+<div class="mySlides fade">
+  <img src="images/family1.png" style="width:100%">
+  <div class="text">My father and mother</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/family2.png" style="width:100%">
+  <div class="text">Our small family</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+</script>
+
+            <div class="containers" style="text-align: justify;">
+                <p class="familyinfo" style="margin: auto position: absolute; padding: 70px;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The head of our family is my father. His word is law for all. My father's name is Wan Karmizi Wan Ishak, 40 years old is house construction laborers. Despite working for 7 hours per day he never complained of being tired after work. He is my inspiration. He inspires me to be patient in the face of any challenge that comes my way.</p> <p style="padding: 70px; margin-top:-100px;"> Besides that, Asmida Mustapha is my mother's given name. My mother's are the one looks after the house. She gets up really early. She does not rely on the maid or the cook. She is a lovely lady. She is somewhat conservative but not narrow minded. She is strong and courageous. My father has a great regard for her. He never does anything without consulting her.</p> <p style="padding: 70px; margin-top:-100px;">I am the eldest son of my parents. My brother is younger than me. My brother’s name is Wan Ahmad Ridzwan. Ridzwan currently studying at SMK Machang, Kelantan. He is in the form 2. Even though our family is small we are still happy. I am very grateful and hope to Allah SWT that my family is blessed and abundant with sustenance as wide as the ocean and may Allah make all our journeys easier.</p>
+            </div>
+        </div>
+ </div>
+
+  <!--- #FOOTER --->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="images/uitm.png" alt="UiTM Logo" width="100" class="logo-light">
+          <img src="images/uitm.png" alt="UiTM Logo" width="100" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          UiTM Dihatiku.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="https://kelantan.uitm.edu.my/index.php/en/" class="footer-link">UiTMCK</a>
+          </li>
+
+          <li>
+            <a href="https://www.uitm.edu.my/index.php/ms/kenali-uitm/tentang-uitm" class="footer-link">About UITM</a>
+          </li>
+
+          <li>
+            <a href="https://hea.uitm.edu.my/v4/index.php/corporate/contact-us" class="footer-link">Contact UITM</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Social Media</p>
+
+        <ul>
+
+          <li>
+            <a href="https://web.facebook.com/frhanzv" class="footer-link">Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/channel/@frhanzv" class="footer-link">Youtube</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/frhanzv/" class="footer-link">Instagram</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2023 | <a href="https://my.linkedin.com/in/wan-ahmad-farhan-849029215?original_referer=https%3A%2F%2Fwww.google.com.my%2F">Wan Ahmad Farhan</a>
+    </p>
+
+  </footer>
+
+  
+<!--- custom js link -->
+  <script src="js/script.js"></script>
+
+<!--- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>  
