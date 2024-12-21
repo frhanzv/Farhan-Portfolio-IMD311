@@ -1,1 +1,3 @@
+# _config.yml
+baseurl: "/Farhan-Portfolio-IMD311" # Base URL for the repository
 permalink: /:name/
